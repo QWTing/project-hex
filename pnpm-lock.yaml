@@ -3,24 +3,40 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': ^7.12.16
   '@babel/eslint-parser': ^7.12.16
+  '@popperjs/core': ^2.11.2
+  '@vee-validate/i18n': ^4.5.10
+  '@vee-validate/rules': ^4.5.10
   '@vue/cli-plugin-babel': ~5.0.0
   '@vue/cli-plugin-eslint': ~5.0.0
   '@vue/cli-plugin-router': ~5.0.0
   '@vue/cli-service': ~5.0.0
   '@vue/eslint-config-airbnb': ^6.0.0
+  axios: ^0.26.0
+  bootstrap: ^5.1.3
   core-js: ^3.8.3
   eslint: ^7.32.0
   eslint-plugin-import: ^2.25.3
-  eslint-plugin-vue: ^8.0.3
+  eslint-plugin-vue: ^8.5.0
   eslint-plugin-vuejs-accessibility: ^1.1.0
+  mitt: ^3.0.0
   sass: ^1.32.7
   sass-loader: ^12.0.0
+  vee-validate: ^4.5.10
   vue: ^3.2.13
+  vue-axios: ^3.4.1
   vue-router: ^4.0.3
 
 dependencies:
+  '@popperjs/core': 2.11.2
+  '@vee-validate/i18n': 4.5.10
+  '@vee-validate/rules': 4.5.10
+  axios: 0.26.0
+  bootstrap: 5.1.3_@popperjs+core@2.11.2
   core-js: 3.21.1
+  mitt: 3.0.0
+  vee-validate: 4.5.10_vue@3.2.31
   vue: 3.2.31
+  vue-axios: 3.4.1_axios@0.26.0+vue@3.2.31
   vue-router: 4.0.13_vue@3.2.31
 
 devDependencies:
@@ -1327,6 +1343,10 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
+  /@popperjs/core/2.11.2:
+    resolution: {integrity: sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==}
+    dev: false
+
   /@sideway/address/4.1.3:
     resolution: {integrity: sha512-8ncEUtmnTsMmL7z1YPB47kPUq7LpKWJNFPsRzHiIajGC5uXlWGn+AmkYPcHNl8S4tcEGx+cnORnNYaw2wvL+LQ==}
     dependencies:
@@ -1505,6 +1525,14 @@ packages:
     dependencies:
       '@types/node': 17.0.21
     dev: true
+
+  /@vee-validate/i18n/4.5.10:
+    resolution: {integrity: sha512-ZDqhMMUgcyUGw1QDoZLULjkXdrL6Q5EMcfTHrR0TifnUsGKEBxzFxfHq8RdBrPrC1QbjdSc3tyLsWaNEjl3jhA==}
+    dev: false
+
+  /@vee-validate/rules/4.5.10:
+    resolution: {integrity: sha512-8kFsXvCzP1JHuyzXyH7cIhLQOJnba6ySG5GzaKnWGIJnbT1itNJ6dACdedjW3bWWpYiOkxi76Nqj14UL0ukMFQ==}
+    dev: false
 
   /@vue/babel-helper-vue-jsx-merge-props/1.2.1:
     resolution: {integrity: sha512-QOi5OW45e2R20VygMSNhyQHvpdUwQZqGPc748JLGCYEy+yp8fNFNdbNIGAgZmi9e+2JHPd6i6idRuqivyicIkA==}
@@ -2328,6 +2356,14 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
+  /axios/0.26.0:
+    resolution: {integrity: sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==}
+    dependencies:
+      follow-redirects: 1.14.9
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /babel-loader/8.2.3_ed870ac3ba52c4ec230ba2bc3dbb311c:
     resolution: {integrity: sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==}
     engines: {node: '>= 8.9'}
@@ -2448,6 +2484,14 @@ packages:
   /boolbase/1.0.0:
     resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=}
     dev: true
+
+  /bootstrap/5.1.3_@popperjs+core@2.11.2:
+    resolution: {integrity: sha512-fcQztozJ8jToQWXxVuEyXWW+dSo8AiXWKwiSSrKWsRB/Qt+Ewwza+JWoLKiTuQLaEPhdNAJ7+Dosc9DOIqNy7Q==}
+    peerDependencies:
+      '@popperjs/core': ^2.10.2
+    dependencies:
+      '@popperjs/core': 2.11.2
+    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -3812,7 +3856,7 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
-  /follow-redirects/1.14.9_debug@4.3.3:
+  /follow-redirects/1.14.9:
     resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -3820,9 +3864,6 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
-    dependencies:
-      debug: 4.3.3
-    dev: true
 
   /forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
@@ -4150,7 +4191,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.9_debug@4.3.3
+      follow-redirects: 1.14.9
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -4839,6 +4880,10 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /mitt/3.0.0:
+    resolution: {integrity: sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==}
+    dev: false
 
   /mkdirp/0.5.5:
     resolution: {integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==}
@@ -6674,6 +6719,25 @@ packages:
     resolution: {integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=}
     engines: {node: '>= 0.8'}
     dev: true
+
+  /vee-validate/4.5.10_vue@3.2.31:
+    resolution: {integrity: sha512-7dZE0PZTNY3Ztp6Gz8iw+QS7Fz59vU1qkD0rBJkldkf9Faw2lFjWgE0tiCist5RQkLgt7/HaVbojzb/SCdutfA==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vue/devtools-api': 6.0.12
+      vue: 3.2.31
+    dev: false
+
+  /vue-axios/3.4.1_axios@0.26.0+vue@3.2.31:
+    resolution: {integrity: sha512-8YZYUOQrBEJktxoQtrM4rr2LfVcDaWfJqv8MqtLlgLlkuBvCYKFSZSo6AXQ4YcCzdgccDqstmuaEh68lcH9xWA==}
+    peerDependencies:
+      axios: '>= 0.20.0'
+      vue: ^3.0.0 || ^2.0.0
+    dependencies:
+      axios: 0.26.0
+      vue: 3.2.31
+    dev: false
 
   /vue-eslint-parser/8.3.0_eslint@7.32.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==}

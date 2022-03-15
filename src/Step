@@ -1,0 +1,18 @@
+; 1.建立前後端
+; 2.建立Products,cart頁面
+; 3.建立上方連結
+; 4.排版設置productsview.vue
+5.設置'更多資訊'按鍵
+  ; 1.建立ProdcutModal.vue
+  ; 2.將product獨立出來
+  ; 3.將Modal和各自的product連接
+  4.排版設置ProductModal.vue
+6.設置'加入購物車'按鍵
+  ; 1.設置ProductModal裡的'加入購物車'
+# 7.CartView.vue裡'移除購物車'按鍵設置
+8.匯入vee-vaildate
+  1.建立vee-vaildata表格
+9.完成後端連結
+  9.1.登入設定
+  9.2.登出設定
+
