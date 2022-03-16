@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkweek6_homework"]=self["webpackChunkweek6_homework"]||[]).push([[33],{33:function(e,n,r){r.r(n),r.d(n,{default:function(){return h}});var u=r(1831);const t={class:"about"},a=(0,u._)("h1",null,"This is an about page",-1),o=[a];function s(e,n){return(0,u.wg)(),(0,u.iD)("div",t,o)}var c=r(497);const i={},k=(0,c.Z)(i,[["render",s]]);var h=k}}]);
+//# sourceMappingURL=33.2a096fa6.js.map
